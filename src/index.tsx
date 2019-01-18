@@ -15,6 +15,12 @@ import App from './containers/App';
 //   whyDidYouUpdate(React);
 // }
 
+export interface IAction{
+    type?:string,
+    payload?:any
+
+}
+
 const logger = createLogger();
 
 const rootReducer = combineReducers({searchRobots,requestRobots});
