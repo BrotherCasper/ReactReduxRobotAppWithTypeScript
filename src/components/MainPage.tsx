@@ -5,9 +5,9 @@ import Scroll from '../components/Scroll'
 import './MainPage.css';
 import ErrorBoundry from '../components/ErrorBoundry';
 import Header from '../components/Header';
-import { IProps } from '../containers/App';
+import { IProps, IState } from '../containers/App';
 
-class MainPage extends Component<IProps,any>{
+class MainPage extends Component<IProps,IState>{
     
     componentDidMount(){
         this.props.onRequestRobots();

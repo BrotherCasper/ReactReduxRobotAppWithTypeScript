@@ -3,15 +3,16 @@ import { CHANGE_SEARCH_FIELD,
          REQUEST_ROBOTS_SUCCESS,
          REQUEST_ROBOTS_FAILED
 } from "./constants";
+import { IAction } from ".";
 
-export const setSearchField = (text) => (
+export const setSearchField = (text:string) => (
     {
         type:CHANGE_SEARCH_FIELD,
         payload:text
     }
 )
 
-export const requestRobots = (dispatch) =>{
+export const requestRobots = (dispatch:any) =>{
     dispatch({type : REQUEST_ROBOTS_PENDING});
     fetch('https://jsonplaceholder.typicode.com/users')
         .then( response =>{return response.json();})

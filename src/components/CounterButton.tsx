@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { IProps, IState } from '../containers/App';
 
-class CounterButton extends Component {
+class CounterButton extends Component<IProps,IState> {
   constructor(props) {
     super(props);
     this.state = {count: 1};

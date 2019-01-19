@@ -11,6 +11,7 @@ export interface IProps{
     robots?:Array<IRobots>,
     searchField?:string,
     isPending?:boolean,
+    color?:string
     
 }
 
@@ -18,7 +19,9 @@ export interface IState{
    robots?:Array<IRobots>,
    searchfield?:string,
    isPending?:boolean,
-   error?:Error
+   error?:Error,
+   hasError?:boolean,
+   count?:number
 }
 
 export interface IRobots{
